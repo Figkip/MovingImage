@@ -9,6 +9,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,300..900&amp;display=swap" rel="stylesheet">
 <style>
 body{margin:0;background:#0b0b0b}
+h1,h2,h3{overflow-wrap:break-word}
 a{color:#d7ff3a}a:hover{color:#ffffff}
 .mi-wrap{max-width:1200px;margin:0 auto;padding:0 32px;box-sizing:border-box}
 .mi-cols3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px}
@@ -21,7 +22,7 @@ a{color:#d7ff3a}a:hover{color:#ffffff}
 .mi-marquee{display:flex;width:max-content;gap:48px;padding-right:48px;white-space:nowrap;will-change:transform;-webkit-animation:mi-scroll 38s linear infinite;animation:mi-scroll 38s linear infinite}
 @-webkit-keyframes mi-scroll{from{-webkit-transform:translate3d(0,0,0);transform:translate3d(0,0,0)}to{-webkit-transform:translate3d(-50%,0,0);transform:translate3d(-50%,0,0)}}
 @keyframes mi-scroll{from{-webkit-transform:translate3d(0,0,0);transform:translate3d(0,0,0)}to{-webkit-transform:translate3d(-50%,0,0);transform:translate3d(-50%,0,0)}}
-@media (prefers-reduced-motion: reduce){.mi-marquee{-webkit-animation:none;animation:none}}
+@media (prefers-reduced-motion: reduce){.mi-marquee{-webkit-animation:none;animation:none;width:auto;flex-wrap:wrap;justify-content:center;white-space:normal;gap:6px 14px;padding:0 16px;font-size:16px !important;line-height:1.4}.mi-dup{display:none !important}}
 @media (max-width: 900px){
 .mi-cols3{grid-template-columns:minmax(0,1fr)}
 .mi-cols2{grid-template-columns:minmax(0,1fr);gap:24px}
@@ -50,7 +51,7 @@ a{color:#d7ff3a}a:hover{color:#ffffff}
 <div style="border-top: 1px solid #2a2a28; border-bottom: 1px solid #2a2a28; padding: 18px 0; overflow: hidden" aria-hidden="true">
 <div class="mi-marquee" style="font-size: 22px; font-weight: 700; font-stretch: 125%; text-transform: uppercase; color: #8d8d86">
 <span>hand-made</span><span style="color: #d7ff3a">✕</span><span>live action</span><span style="color: #d7ff3a">✕</span><span>stop-motion</span><span style="color: #d7ff3a">✕</span><span>interaction</span><span style="color: #d7ff3a">✕</span><span>sound</span><span style="color: #d7ff3a">✕</span><span>generative</span><span style="color: #d7ff3a">✕</span><span>web</span><span style="color: #d7ff3a">✕</span><span>installation</span><span style="color: #d7ff3a">✕</span>
-<span>hand-made</span><span style="color: #d7ff3a">✕</span><span>live action</span><span style="color: #d7ff3a">✕</span><span>stop-motion</span><span style="color: #d7ff3a">✕</span><span>interaction</span><span style="color: #d7ff3a">✕</span><span>sound</span><span style="color: #d7ff3a">✕</span><span>generative</span><span style="color: #d7ff3a">✕</span><span>web</span><span style="color: #d7ff3a">✕</span><span>installation</span><span style="color: #d7ff3a">✕</span>
+<span class="mi-dup" style="display: contents"><span>hand-made</span><span style="color: #d7ff3a">✕</span><span>live action</span><span style="color: #d7ff3a">✕</span><span>stop-motion</span><span style="color: #d7ff3a">✕</span><span>interaction</span><span style="color: #d7ff3a">✕</span><span>sound</span><span style="color: #d7ff3a">✕</span><span>generative</span><span style="color: #d7ff3a">✕</span><span>web</span><span style="color: #d7ff3a">✕</span><span>installation</span><span style="color: #d7ff3a">✕</span></span>
 </div>
 </div>
 
@@ -59,7 +60,7 @@ a{color:#d7ff3a}a:hover{color:#ffffff}
 <video src="media/button.mp4" autoplay muted loop playsinline aria-label="Student interactive work in progress" style="width: 100%; aspect-ratio: 1 / 1; max-height: 480px; object-fit: cover; display: block"></video>
 <div>
 <h2 class="mi-h2" style="margin: 0 0 20px; font-size: 52px; line-height: 1; font-weight: 800; font-stretch: 125%; text-transform: uppercase">Hello, it's time to decide…</h2>
-<p style="margin: 0 0 16px; font-size: 22px">Which strand you wish to follow next semester...</p>
+<p style="margin: 0 0 16px; font-size: 22px">Which strand you wish to follow next semester.</p>
 <p style="margin: 0 0 16px; color: #d6d6d0">This is the strand where you'll start with ideas and find out what happens when they move, make a sound or answer back…</p>
 <p style="margin: 0; color: #d7ff3a; font-weight: 700">Motion brings design to life.</p>
 </div>
@@ -147,19 +148,19 @@ a{color:#d7ff3a}a:hover{color:#ffffff}
 <div class="mi-wall" style="margin-bottom: 96px">
 <figure class="mi-span2" style="margin: 0"><img src="media/rpm1.jpg" alt="Turntable with a printed animation disc reading Shook Up The World" style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; display: block"><figcaption style="padding-top: 10px; font-size: 15px; color: #d6d6d0"><strong style="color: #f2f2ee">Dom Enwonwu</strong> · 45 RPM. Muhammad Ali, animation on a record player.</figcaption></figure>
 <figure class="mi-span2" style="margin: 0"><img src="media/justajoke.jpg" alt="Ten posters from the series Just a Joke" style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; display: block"><figcaption style="padding-top: 10px; font-size: 15px; color: #d6d6d0"><strong style="color: #f2f2ee">Jo Kalaja</strong> · #EverydayVoices. Just a Joke, moving poster series.</figcaption></figure>
-<figure style="margin: 0"><video src="media/sam-loop.mp4" autoplay muted loop playsinline aria-label="Light-drawn form projected onto a hanging sheet in a garden at night" style="width: 100%; aspect-ratio: 8 / 9; object-fit: cover; display: block"></video><figcaption style="padding-top: 10px; font-size: 15px; color: #d6d6d0"><strong style="color: #f2f2ee">Sam Chilman</strong> · Migration. TouchDesigner installation projected onto fabric in a garden at night. Birdsong gathered on research walks drives the migration pattern in real time.</figcaption></figure>
-<figure style="margin: 0"><video src="media/elyse-ruminate2.mp4" autoplay muted loop playsinline aria-label="Ruminate: light projected across a bed" style="width: 100%; aspect-ratio: 8 / 9; object-fit: cover; display: block"></video><figcaption style="padding-top: 10px; font-size: 15px; color: #d6d6d0"><strong style="color: #f2f2ee">Elyse Brill</strong> · Ruminate. Installation, animation, projection.</figcaption></figure>
+<figure style="margin: 0"><video src="media/sam-loop.mp4" autoplay muted loop playsinline aria-label="Light-drawn form projected onto a hanging sheet in a garden at night" style="width: 100%; aspect-ratio: 8 / 9; object-fit: cover; display: block"></video><figcaption style="padding-top: 10px; font-size: 15px; color: #d6d6d0"><strong style="color: #f2f2ee">Sam Chilman</strong> · Migration. TouchDesigner installation projected onto fabric in a garden at night. Birdsong gathered on research walks drives the migration pattern in real time.<br><button class="mi-wws" type="button" data-key="sam" data-dur="2 min" data-full="media/sam-full.mp4" style="margin-top: 12px; display: inline-flex; align-items: center; min-height: 44px; box-sizing: border-box; padding: 8px 16px; border: 1px solid #d7ff3a; border-radius: 999px; background: transparent; color: #d7ff3a; font-family: inherit; font-weight: 700; font-size: 15px; cursor: pointer">Watch with sound · 2 min</button></figcaption></figure>
+<figure style="margin: 0"><video src="media/elyse-ruminate2.mp4" autoplay muted loop playsinline aria-label="Ruminate: light projected across a bed" style="width: 100%; aspect-ratio: 8 / 9; object-fit: cover; display: block"></video><figcaption style="padding-top: 10px; font-size: 15px; color: #d6d6d0"><strong style="color: #f2f2ee">Elyse Brill</strong> · Ruminate. Installation, animation, projection.<br><button class="mi-wws" type="button" data-key="ruminate" data-dur="1 min" data-full="media/ruminate-full.mp4" style="margin-top: 12px; display: inline-flex; align-items: center; min-height: 44px; box-sizing: border-box; padding: 8px 16px; border: 1px solid #d7ff3a; border-radius: 999px; background: transparent; color: #d7ff3a; font-family: inherit; font-weight: 700; font-size: 15px; cursor: pointer">Watch with sound · 1 min</button></figcaption></figure>
 <figure class="mi-span2" style="margin: 0"><img src="media/immig.jpg" alt="Blue photo fragments around the words thank god for immigration" style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; display: block"><figcaption style="padding-top: 10px; font-size: 15px; color: #d6d6d0"><strong style="color: #f2f2ee">Dom Enwonwu</strong> · Migration, part 2 of 2. Thank God for Immigration.</figcaption></figure>
 <figure class="mi-span2" style="margin: 0"><img src="media/grace.jpg" alt="Pink poster series of hand-formed words, To be a woman is" style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; display: block"><figcaption style="padding-top: 10px; font-size: 15px; color: #d6d6d0"><strong style="color: #f2f2ee">Grace Seaman</strong> · #EverydayVoices. Poster series.</figcaption></figure>
 <figure style="margin: 0"><img src="media/face.jpg" alt="Black and white collage face" style="width: 100%; aspect-ratio: 8 / 9; object-fit: cover; display: block"><figcaption style="padding-top: 10px; font-size: 15px; color: #d6d6d0"><strong style="color: #f2f2ee">Lottie Hodges</strong> · This Is Me. Collage.</figcaption></figure>
 <figure style="margin: 0"><img src="media/rpm2.jpg" alt="Close-up of a record with printed clouds" style="width: 100%; aspect-ratio: 8 / 9; object-fit: cover; display: block"><figcaption style="padding-top: 10px; font-size: 15px; color: #d6d6d0"><strong style="color: #f2f2ee">Clarisse Ranchoux</strong> · 45 RPM loop.</figcaption></figure>
 <figure style="margin: 0"><img src="media/thisisme.jpg" alt="Cut paper collage of a face and torso" style="width: 100%; aspect-ratio: 8 / 9; object-fit: cover; object-position: 70% 50%; display: block; background: #ffffff"><figcaption style="padding-top: 10px; font-size: 15px; color: #d6d6d0"><strong style="color: #f2f2ee">Lottie Hodges</strong> · This Is Me. Collage.</figcaption></figure>
-<figure class="mi-span2" style="margin: 0"><video src="media/dom-loop.mp4" autoplay muted loop playsinline aria-label="Tablet and two phones on a wall showing distorted type" style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; display: block"></video><figcaption style="padding-top: 10px; font-size: 15px; color: #d6d6d0"><strong style="color: #f2f2ee">Dom Enwonwu</strong> · Migration, part 1 of 2. Digital Echo Chamber of Rage and Hostility, multi-screen installation.</figcaption></figure>
+<figure class="mi-span2" style="margin: 0"><video src="media/dom-loop.mp4" autoplay muted loop playsinline aria-label="Tablet and two phones on a wall showing distorted type" style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; display: block"></video><figcaption style="padding-top: 10px; font-size: 15px; color: #d6d6d0"><strong style="color: #f2f2ee">Dom Enwonwu</strong> · Migration, part 1 of 2. Digital Echo Chamber of Rage and Hostility, multi-screen installation.<br><button class="mi-wws" type="button" data-key="dom" data-dur="38 sec" data-full="media/dom-full.mp4" style="margin-top: 12px; display: inline-flex; align-items: center; min-height: 44px; box-sizing: border-box; padding: 8px 16px; border: 1px solid #d7ff3a; border-radius: 999px; background: transparent; color: #d7ff3a; font-family: inherit; font-weight: 700; font-size: 15px; cursor: pointer">Watch with sound · 38 sec</button></figcaption></figure>
 <figure style="margin: 0"><img src="media/boat.jpg" alt="Hand-drawn boat projected onto a sea wall at night" style="width: 100%; aspect-ratio: 8 / 9; object-fit: cover; object-position: 40% 50%; display: block"><figcaption style="padding-top: 10px; font-size: 15px; color: #d6d6d0"><strong style="color: #f2f2ee">Lottie Hodges</strong> · Migration. Projection on a sea wall.</figcaption></figure>
 <figure class="mi-span2" style="margin: 0"><img src="media/tv2.jpg" alt="Wall of CRT televisions with a phone mounted in front" style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; display: block"><figcaption style="padding-top: 10px; font-size: 15px; color: #d6d6d0"><strong style="color: #f2f2ee">Martin Doran</strong> · Error 404: Context Not Found. Installation with CRT screens.</figcaption></figure>
 <figure class="mi-span2" style="margin: 0"><img src="media/toxic.jpg" alt="Ten bright posters with silhouettes and affirmations" style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; display: block"><figcaption style="padding-top: 10px; font-size: 15px; color: #d6d6d0"><strong style="color: #f2f2ee">Dom Enwonwu</strong> · #EverydayVoices. Toxic Masculinity, poster series.</figcaption></figure>
 <figure class="mi-span2" style="margin: 0"><img src="media/harry.jpg" alt="Typographic poster series in bright colours on black" style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; display: block"><figcaption style="padding-top: 10px; font-size: 15px; color: #d6d6d0"><strong style="color: #f2f2ee">Harry Atkin-Dowding</strong> · #EverydayVoices. Moving poster series.</figcaption></figure>
-<figure class="mi-span2" style="margin: 0"><video src="media/ella-loop.mp4" autoplay muted loop playsinline aria-label="Ella Baker, dual projection of migration footage" style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; display: block"></video><figcaption style="padding-top: 10px; font-size: 15px; color: #d6d6d0"><strong style="color: #f2f2ee">Ella Baker</strong> · Migration. Dual projection: two videos projected at each other, an interplay between forced migration and immigration.</figcaption></figure>
+<figure class="mi-span2" style="margin: 0"><video src="media/ella-loop.mp4" autoplay muted loop playsinline aria-label="Ella Baker, dual projection of migration footage" style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; display: block"></video><figcaption style="padding-top: 10px; font-size: 15px; color: #d6d6d0"><strong style="color: #f2f2ee">Ella Baker</strong> · Migration. Dual projection: two videos projected at each other, an interplay between forced migration and immigration.<br><button class="mi-wws" type="button" data-key="ella" data-dur="2 min" data-full="media/ella-full.mp4" style="margin-top: 12px; display: inline-flex; align-items: center; min-height: 44px; box-sizing: border-box; padding: 8px 16px; border: 1px solid #d7ff3a; border-radius: 999px; background: transparent; color: #d7ff3a; font-family: inherit; font-weight: 700; font-size: 15px; cursor: pointer">Watch with sound · 2 min</button></figcaption></figure>
 </div>
 <h3 style="margin: 0 0 24px; font-size: 28px; line-height: 1.1; font-weight: 800; font-stretch: 125%; text-transform: uppercase; color: #a3a39c">Before that</h3>
 <div class="mi-wall">
@@ -232,5 +233,29 @@ a{color:#d7ff3a}a:hover{color:#ffffff}
 </footer>
 
 </div>
+<script>
+(function () {
+  var buttons = Array.prototype.slice.call(document.querySelectorAll('.mi-wws'));
+  function setVid(b, on) {
+    var v = b.closest('figure').querySelector('video');
+    if (!v.getAttribute('data-loop')) v.setAttribute('data-loop', v.getAttribute('src'));
+    if (on) {
+      v.src = b.getAttribute('data-full'); v.loop = false; v.muted = false; v.controls = true;
+      b.textContent = 'Back to loop'; b.setAttribute('aria-pressed', 'true');
+    } else {
+      v.src = v.getAttribute('data-loop'); v.controls = false; v.loop = true; v.muted = true;
+      b.textContent = 'Watch with sound · ' + b.getAttribute('data-dur'); b.setAttribute('aria-pressed', 'false');
+    }
+    var p = v.play(); if (p && p.catch) p.catch(function () {});
+  }
+  buttons.forEach(function (b) {
+    b.addEventListener('click', function () {
+      var on = b.getAttribute('aria-pressed') !== 'true';
+      buttons.forEach(function (o) { if (o !== b && o.getAttribute('aria-pressed') === 'true') setVid(o, false); });
+      setVid(b, on);
+    });
+  });
+})();
+</script>
 </body>
 </html>
