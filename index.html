@@ -18,9 +18,10 @@ a{color:#d7ff3a}a:hover{color:#ffffff}
 .mi-btn:hover{background:#ffffff !important;color:#0b0b0b !important}
 .mi-hero-p{display:none}
 @media (max-width: 700px){.mi-hero-l{display:none}.mi-hero-p{display:block}}
-.mi-marquee{display:flex;gap:48px;white-space:nowrap;animation:mi-scroll 38s linear infinite}
-@keyframes mi-scroll{from{transform:translateX(0)}to{transform:translateX(-50%)}}
-@media (prefers-reduced-motion: reduce){.mi-marquee{animation:none}}
+.mi-marquee{display:flex;width:max-content;gap:48px;padding-right:48px;white-space:nowrap;will-change:transform;-webkit-animation:mi-scroll 38s linear infinite;animation:mi-scroll 38s linear infinite}
+@-webkit-keyframes mi-scroll{from{-webkit-transform:translate3d(0,0,0);transform:translate3d(0,0,0)}to{-webkit-transform:translate3d(-50%,0,0);transform:translate3d(-50%,0,0)}}
+@keyframes mi-scroll{from{-webkit-transform:translate3d(0,0,0);transform:translate3d(0,0,0)}to{-webkit-transform:translate3d(-50%,0,0);transform:translate3d(-50%,0,0)}}
+@media (prefers-reduced-motion: reduce){.mi-marquee{-webkit-animation:none;animation:none}}
 @media (max-width: 900px){
 .mi-cols3{grid-template-columns:minmax(0,1fr)}
 .mi-cols2{grid-template-columns:minmax(0,1fr);gap:24px}
